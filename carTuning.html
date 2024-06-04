@@ -1,0 +1,123 @@
+<html>
+
+<body>
+    <style>
+        table{
+            width: 100%;
+            /*padding-top: 10%;*/
+            padding-bottom: 10%;
+            /*border-collapse: collapse;*/
+        }
+
+     
+
+        th, td{
+            border: 2px solid #ddd;
+        }
+
+        .slider{
+            width: 120%;
+            padding-left: 30px;
+            padding-right: 0%;
+            margin-right: 0%;
+        }
+
+       /* .slider-value{
+            margin-left: 220px;
+            margin-right: 200px;
+        }*/
+    </style>
+
+    <table>
+        <caption>Differential tuning</caption>
+        <!--tuning diff for the front of the car -->
+        <thead>
+            <tr>
+                <th>front</th> 
+                <th>low</th>
+                <th>high</th>
+            </tr>
+        </thead>
+         
+        <tbody>
+            <tr>
+                <td>Acceleration</td>
+                <td>Minimum</td>
+                <td>Maximum</td>
+            </tr>    
+            <tr>
+                <td>Deceleration</td>
+                <td>Minimum</td>
+                <td>Maximum</td>
+            </tr>
+        </tbody>
+            <!--tuning for the rear of the car-->>
+        <thead>
+            <tr>
+                <th>rear</th>
+                <th>low</th>
+                <th>high</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Acceleration</td>
+                <td>Minimum</td>
+                <td>Maximum</td>
+            </tr>    
+            <tr>
+                <td>Deceleration</td>
+                <td>Minimum</td>
+                <td>Maximum</td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>Center</th>
+                <th>Front</th>
+                <th>Rear</th>
+            </tr>
+        </thead>
+
+    </table>
+
+    <table>
+        <caption>Spring Tuning</caption>
+
+        <thead>
+            <tr>
+                <th>Spring</th> 
+                <th>Soft</th>
+                <th>Stiff</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>front</td>
+                
+                <td>
+                    <div class="slider-value" id="FrontSpringValue">1220.8 lbs</div>
+                    <input type="range" min="244.2" max="1220.8" value="1220.8" class="slider" id="FrontSpringSlider"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>rear</td>
+                
+                <td>
+                    <div class="slider-value" id="RearSpringValue">244.2 lbs</div>
+                    <input type="range" min="244.2" max="1220.8" value="244.2" class="slider" id="RearSpringSlider"> 
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script src="TuningSlider.js"></script>
+    <!-- <script src="Slider/testChatGPT.js"></script>-->
+
+ </body>
+</html>
